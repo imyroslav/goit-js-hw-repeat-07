@@ -5,16 +5,22 @@ const categoryArray = document.querySelectorAll(".item");
 console.log(`Number of categories:${categoryArray.length}`);
 console.log(categoryArray);
 
-categoryArray.forEach(catData);
+// categoryArray.forEach(catData);
 
-function catData(listItem) {
+// function catData() {
     
-    const headingTwo = document.querrySelector("h2");
-    console.log(headingTwo.textContent)
+//     let headingTwo = document.querySelector("h2");
+//     console.log(`Category: ${headingTwo.textContent}`);
+//     const elementArray = document.querySelectorAll(".item ul li")
+//     console.log(elementArray.length)
+// }
 
+for (const category of categoryArray) {
+    const headingTwo = document.querySelector("h2");
+    console.log(`Category: ${headingTwo.textContent}`);
+    const elementArray = document.querySelectorAll(".item ul li")
+    console.log(elementArray.length)
 }
-
-
 
 
 
