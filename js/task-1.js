@@ -2,25 +2,18 @@
 
 
 const categoryArray = document.querySelectorAll(".item");
-console.log(`Number of categories:${categoryArray.length}`);
-console.log(categoryArray);
+console.log(`Number of categories: ${categoryArray.length}`);
 
-// categoryArray.forEach(catData);
 
-// function catData() {
-    
-//     let headingTwo = document.querySelector("h2");
-//     console.log(`Category: ${headingTwo.textContent}`);
-//     const elementArray = document.querySelectorAll(".item ul li")
-//     console.log(elementArray.length)
-// }
+categoryArray.forEach(myFunction);
 
-for (const category of categoryArray) {
-    const headingTwo = document.querySelector("h2");
-    console.log(`Category: ${headingTwo.textContent}`);
-    const elementArray = document.querySelectorAll(".item ul li")
-    console.log(elementArray.length)
+function myFunction(element) {
+    const elementHeading = element.querySelector("h2");
+    console.log(`Category: ${elementHeading.textContent}`);
+    const numberOfItems = element.querySelectorAll("li");
+    console.log(`Elements: ${numberOfItems.length}`);
 }
+
 
 
 
